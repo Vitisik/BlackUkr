@@ -1,0 +1,506 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Mr+Dafoe&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.none {
+  display: none !important;
+}
+
+.header {
+  padding: 31px 0 100px;
+  color: #e0b218;
+
+  /* border-radius: 0 0 54px 54px; */
+  /* overflow: hidden; */
+
+
+  background-color: #000000;
+}
+
+.img {
+  content: '';
+  position: fixed;
+
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+
+  height: 820px;
+  width: 1000px;
+  background-image: url('./../img/01.PNG');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  opacity: .1;
+}
+
+
+a {
+  color: #ffffff;
+}
+
+/* .header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  
+} */
+
+.container--header {
+  position: relative;
+
+  /* margin-top: 200px; */
+  margin: 0 auto;
+  margin-left: 50%;
+  max-width: 1440px;
+  padding: 0 32px;
+  height: 100%;
+
+}
+
+/* .img {
+  content: '';
+  position: fixed;
+
+  right: 0;
+  left: 0;
+
+  height: 820px;
+  width: 1000px;
+  background-image: url('./../img/01.PNG');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  opacity: .1;
+} */
+
+
+
+.container {
+  margin: 0 auto;
+  /* margin-top: 100px; */
+  max-width: 1440px;
+  padding: 0 32px;
+  height: 100%;
+}
+
+.container--header {
+  position: relative;
+
+  /* margin-top: 200px; */
+  margin: 200px auto 0;
+  /* margin-left: 50%; */
+  max-width: 1440px;
+  padding: 0 32px;
+  height: 100%;
+
+}
+
+.logo {
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 150px;
+}
+
+/* .logo p{
+  color: blue;
+  font-size: 25px;
+  font-weight: 700;
+}
+.logo span {
+  color: yellow;
+} */
+
+
+.nav {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  max-width: 1000px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  margin-top: -200px;
+
+  z-index: 99;
+
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #ffffff4b;
+
+  transition: all 0.2s ease-in;
+}
+
+.nav:hover {
+  background-color: #6858267a;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  font-style: 125px;
+  font-weight: 300;
+}
+
+.nav-list__item {
+
+  /* max-width: 675px; */
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  font-family: 'Mr Dafoe', cursive;
+}
+
+
+.slider__inner {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.slider__item{
+  margin-left: 15px;
+  /* background-image: url(./../img/slider/slider01.jpg);
+  background-size: cover;
+  background-position: center; */
+
+  /* justify-content: space-evenly;
+  align-items: center; */
+
+  /* border: 1px solid #fff;
+  border-radius: 15px;
+
+  background-color: rgba(255, 255, 255, 0.15); */
+}
+
+/* .slider__item-img {
+  width: 500px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+} */
+
+.slider__item-img img {
+  /* border-radius: 65px; */
+  width: 100%;
+  max-height: 400px;
+
+  padding: 15px 0px;
+}
+
+.slider__item-title {
+
+}
+
+.slick-dots li button {
+ height: 14px;
+ width: 14px;
+ background-color: rgba(98, 98, 98, 50%);
+ border-radius: 50%;
+}
+
+.slick-dots li.slick-active button{
+  background-color: #fff;
+
+}
+
+.slick-dots li button::before {
+  display: none;
+}
+
+.slick-dots li {
+  margin: 0 9px;
+
+}
+
+
+
+
+/* Video */
+
+.video {
+  /* position: relative; */
+  background-color: #685826;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  /* border-radius: 54px; */
+}
+
+.video__container {
+ display: flex;
+ justify-content: space-around;
+ gap: 15px;
+}
+
+.video__text {
+  font-size: 24px;
+  font-weight: 500;
+
+  width: 70%;
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  color: #ffffff;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+/* width="560" height="815"  */
+
+.video__text p{
+  padding-bottom: 15px;
+}
+
+.video__play {
+  position: relative;
+  background-color: #a39090;
+
+
+  background-image: url(./../img/prev/prev.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0;
+  /* width: 100%; */
+  width: 70%;
+  
+  border-radius: 50px;
+  box-shadow: 15px 15px 15px;
+}
+
+.video__play:hover {
+  cursor: pointer;
+  background-size: 101%;
+}
+
+
+
+.video__container iframe {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50px;
+  z-index: 1;
+
+  box-shadow: 15px 15px 15px;
+}
+
+
+/* card */
+
+.card__gather {
+  /* position: relative; */
+  
+  background-color: #3f3b2c;
+
+  /* border-radius: 54px; */
+}
+
+.wrap {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 16px;
+} 
+
+
+.card__text {
+  padding-top: 30px;
+
+  text-align: center;
+  color: #e0b72f;
+  line-height: 1;
+
+  font-family: 'Mr Dafoe', cursive;
+}
+.card__text h2 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.card__text p {
+  font-size: 40px;
+  font-weight: 700;
+
+
+}
+
+.cards {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.card {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  perspective: 1000px;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* left: 50%; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(180deg);
+}
+
+.front img, .back img {
+  border-radius: 25px;
+
+  box-shadow: 15px 15px 15px;
+}
+
+.card:hover .front{
+  transform: rotateY(180deg);
+}
+.card:hover .back{
+  transform: rotateY(360deg);
+}
+
+.card__gather--text {
+  /* font-size: 24px;
+  font-weight: 500;
+
+  text-align: center;
+
+  max-width: 500px; */
+}
+
+.video__text--cards {
+  max-width: 660px;
+}
+
+.video__text--cards span {
+  font-size: 16px;
+  font-weight: 100;
+
+  opacity: .7;
+}
+
+/* order */
+
+
+.pre-order {
+  background-color: #685826;
+
+}
+
+.order__menu {
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+  font-weight: 700;
+
+}
+
+.order {
+  position: relative;
+
+  border-radius: 15px;
+  padding: 15px 30px;
+
+  margin-bottom: 50px;
+}
+
+
+/* footer */
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #444137;
+  color: #ffffff;
+}
+
+.footer__inst {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.footer__button,
+.order {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px black;
+
+  background-color: #e0b218;
+  opacity: 0.8;
+  z-index: 1;
+
+  transition: all 0.2s ease-in;
+}
+
+.footer__button:hover,
+.order:hover {
+  opacity: 1;
+  box-shadow: 10px 10px 10px black;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer__wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.footer__wrap-time {
+  line-height: 1.5;
+}
+
+.footer__wrap-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 1.5;
+}
+
+
