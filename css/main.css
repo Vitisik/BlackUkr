@@ -191,7 +191,7 @@ a {
   background-color: rgba(255, 255, 255, 0.15); */
 }
 
-/* .slider__item-img {
+ .slider__item-img {
   width: 500px;
   height: 100%;
 
@@ -199,8 +199,8 @@ a {
   justify-content: center;
   align-items: center;
 
-  border-radius: 15px;
-} */
+/*   border-radius: 15px; */
+} 
 
 .slider__item-img img {
   /* border-radius: 65px; */
